@@ -1,6 +1,6 @@
 const express = require('express');
 
-const connectdatabase = require('./config/db');
+const connectdatabase = require('../config/db');
 
 const app = express();
 
@@ -10,11 +10,11 @@ const cookieParser = require('cookie-parser');
 
 const port = 8006;
 
-const urlroutes = require('./routes/userRoutes');
+const urlroutes = require('../routes/userRoutes');
 
-const userRoutes = require('./routes/allRoutes');
+const userRoutes = require('../routes/allRoutes');
 
-const {CheckAuthentication,RestrictUserOnlyTO} = require('./middleware/userMiddleware')
+const {CheckAuthentication,RestrictUserOnlyTO} = require('../middleware/userMiddleware')
 
 // connect the server
 
