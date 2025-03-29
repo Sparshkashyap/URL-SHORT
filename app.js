@@ -1,6 +1,8 @@
 const express = require('express');
 
-const connectdatabase = require('../config/db');
+require('dotenv').config();
+
+const connectdatabase = require('./config/db');
 
 const app = express();
 
@@ -8,13 +10,13 @@ const path =require('path');
 
 const cookieParser = require('cookie-parser');
 
-const port = process.env.PORT || 8006;
+const port = process.env.PORT || 8005;
 
-const urlroutes = require('../routes/userRoutes');
+const urlroutes = require('./routes/userRoutes');
 
-const userRoutes = require('../routes/allRoutes');
+const userRoutes = require('./routes/allRoutes');
 
-const {CheckAuthentication,RestrictUserOnlyTO} = require('../middleware/userMiddleware')
+const {CheckAuthentication,RestrictUserOnlyTO} = require('./middleware/userMiddleware')
 
 // connect the server
 

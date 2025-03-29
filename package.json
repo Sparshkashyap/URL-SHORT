@@ -1,11 +1,11 @@
 {
-  "name": "url-Shortner",
+  "name": "url-shortner",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
+    "start": "node app.js",
     "build": "pnpm install"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
+    "export": "^0.1.337",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.15.0",
