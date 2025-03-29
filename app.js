@@ -8,7 +8,7 @@ const path =require('path');
 
 const cookieParser = require('cookie-parser');
 
-const port = 8006;
+const port = process.env.PORT || 8006;
 
 const urlroutes = require('../routes/userRoutes');
 
