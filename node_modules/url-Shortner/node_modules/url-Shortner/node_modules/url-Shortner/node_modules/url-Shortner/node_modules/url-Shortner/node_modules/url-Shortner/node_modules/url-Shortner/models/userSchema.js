@@ -5,7 +5,7 @@ const UserSchema = new mongoose.Schema({
     originalURL :{
         type:String,
         required:true,
-        unique:true
+        unique:true,
     },
     shortidURL:{
         type:String,

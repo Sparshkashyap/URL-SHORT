@@ -42,6 +42,6 @@ app.use('/',urlroutes); // StaticRoutes(homepage)
 
 // server start
 
-app.listen(port, ()=>console.log(`Server Started:: ${port}`));
+app.listen(port, ()=>console.log(`Server Started : ${port} 🎉`));
 
     

@@ -27,7 +27,7 @@ const ShortURL = async (req, res) => {
         }
         );
 
-        // console.log("✅ Generated newURL:", newURL);
+        console.log("✅ Generated newURL:", newURL);
 
         if (!newURL) {
 
@@ -42,7 +42,7 @@ const ShortURL = async (req, res) => {
     catch (err) {
 
         console.log("Error is occur ");
-        return res.status(404).json({status:"pending",message:"User Not defined"});
+        return res.status(404).json({status:"pending",message:"please enter the unique url"});
 
     }
 }
@@ -74,6 +74,9 @@ const redirecturl = async (req, res) => {
             }
 
         );
+
+        // console.log(entry);
+        
 
         if (!entry) {
             return res.status(404).json({ status: "pending", message: "entry is not exist" });

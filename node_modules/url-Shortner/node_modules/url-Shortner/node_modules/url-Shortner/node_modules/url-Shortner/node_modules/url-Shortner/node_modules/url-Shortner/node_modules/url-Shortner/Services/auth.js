@@ -8,6 +8,7 @@ function setUser(user){
 
     // sessionIdUserMap.set(id,user);
     // return sessionIdUserMap;
+    
 
     return jwt.sign({
        _id:user._id,
