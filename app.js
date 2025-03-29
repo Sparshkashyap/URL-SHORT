@@ -1,4 +1,3 @@
-
 const express = require('express');
 
 const connectdatabase = require('./config/db');

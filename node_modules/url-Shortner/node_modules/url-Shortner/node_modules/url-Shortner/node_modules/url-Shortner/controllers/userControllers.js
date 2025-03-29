@@ -27,7 +27,7 @@ const ShortURL = async (req, res) => {
         }
         );
 
-        console.log("✅ Generated newURL:", newURL);
+        // console.log("✅ Generated newURL:", newURL);
 
         if (!newURL) {
 
