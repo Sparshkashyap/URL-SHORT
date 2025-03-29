@@ -16,7 +16,7 @@ const urlroutes = require('./routes/userRoutes');
 
 const userRoutes = require('./routes/allRoutes');
 
-const {CheckAuthentication,RestrictUserOnlyTO} = require('./middleware/userMiddleware')
+// const {CheckAuthentication,RestrictUserOnlyTO} = require('./middleware/userMiddleware')
 
 // connect the server
 
@@ -37,7 +37,7 @@ app.set('views',path.join(__dirname,'views'));
 
 // Routes
 
-app.use('/url',RestrictUserOnlyTO(["NORMAL","ADMIN"]),urlroutes);
+app.use('/url',urlroutes);
 app.use('/user',userRoutes);
 app.use('/',urlroutes); // StaticRoutes(homepage)
 
