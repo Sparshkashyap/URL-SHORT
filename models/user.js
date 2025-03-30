@@ -1,7 +1,6 @@
 
 const mongoose = require('mongoose');
-const { unique } = require('next/dist/build/utils');
-const { modelName } = require('./userSchema');
+
 
 const UserSchema = new mongoose.Schema({
 

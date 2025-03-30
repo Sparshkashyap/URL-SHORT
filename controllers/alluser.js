@@ -12,7 +12,7 @@ const signup = async (req,res)=>{
 
     try{
 
-    const {name,email,password} = req.body;    
+    const {name,email,password} = req.body; 
     const newUser = await user.create({
         name,
         email,

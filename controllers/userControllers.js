@@ -62,7 +62,7 @@ const redirecturl = async (req, res) => {
                 shortidURL
             },
             {
-                $push: {
+                $push:{
                     visithistory: {
                         timestamps: Date.now()
                     },

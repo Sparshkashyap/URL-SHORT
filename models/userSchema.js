@@ -14,7 +14,6 @@ const UserSchema = new mongoose.Schema({
     },
     visithistory:[{
         timeStamp:{
-
             type: Number,
             default:Date.now
         }
